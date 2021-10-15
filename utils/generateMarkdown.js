@@ -1,8 +1,9 @@
+const licenses = require('./licenses')
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   console.log(license)
-  let licenseBadge = "test";
+  let licenseBadge = "";
   if (license === "MIT") {
     licenseBadge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
   } else if (license === "GNU") {
@@ -10,7 +11,7 @@ function renderLicenseBadge(license) {
   } else if (license === "Apache") {
     licenseBadge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
   } else {
-    licenseBadge = "testing1234";
+    licenseBadge = "";
   };
   console.log(licenseBadge);
   return licenseBadge;
@@ -19,13 +20,35 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-
+  let licenseLink = "";
+  if (license === "MIT") {
+    licenseLink = "https://www.gnu.org/licenses/gpl-3.0";
+  } else if (license === "GNU") {
+    licenseBadge = "https://opensource.org/licenses/MIT";
+  } else if (license === "Apache") {
+    licenseLink = "https://opensource.org/licenses/Apache-2.0";
+  } else {
+    licenseLink = "";
+  };
+  return licenseLink;
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
- 
+  console.log("RENDERLICENSESECTION: ", license)
+  let licenseText = "test";
+  if (license === "MIT") {
+    licenseText = licenses.mit;
+  } else if (license === "GNU") {
+    licenseBadge = licenses.gnu;
+  } else if (license === "Apache") {
+    licenseText = licenses.apache;
+  } else {
+    licenseText = "";
+  };
+  console.log(licenseText);
+  return licenseText;
 }
 
 // TODO: Create a function to generate markdown for README
@@ -36,7 +59,7 @@ function generateMarkdown(data) {
   return `
   <div id="top"></div>
   
-  ${licenseBadge}
+  ${renderLicenseBadge(license)}
   
   <div align="center">
   <img src="./assets/images/readmelogo.png" alt="Logo" width="80" height="80">
@@ -83,11 +106,13 @@ function generateMarkdown(data) {
   <p align="right">(<a href="#top">back to top</a>)</p>
 
   ## License
-  ${data.license}
+  ${data.license} ${renderLicenseLink(license)}
+  
+  ${renderLicenseSection(license)}
   <p align="right">(<a href="#top">back to top</a>)</p>
   
 `;
-})  
+} 
   
 
 module.exports = generateMarkdown;
