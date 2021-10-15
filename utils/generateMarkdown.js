@@ -1,17 +1,19 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  let licenseBadge = "";
-  if (license === "MIT"){
+  console.log(license)
+  let licenseBadge = "test";
+  if (license === "MIT") {
     licenseBadge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
   } else if (license === "GNU") {
     licenseBadge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
   } else if (license === "Apache") {
     licenseBadge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
   } else {
-    licenseBadge = "";
+    licenseBadge = "testing1234";
   };
-  return licenseBadge
+  console.log(licenseBadge);
+  return licenseBadge;
 }
 
 // TODO: Create a function that returns the license link
@@ -27,10 +29,10 @@ function renderLicenseSection(license) {
 }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data, licenseBadge) {
-console.log(licenseBadge);
-  const license = data.license;
-  renderLicenseBadge(license);
+function generateMarkdown(data) {
+
+  let license = data.license;
+  renderLicenseBadge(license)
   return `
   <div id="top"></div>
   
@@ -82,10 +84,11 @@ console.log(licenseBadge);
 
   ## License
   ${data.license}
-  
   <p align="right">(<a href="#top">back to top</a>)</p>
+  
 `;
-}
+})  
+  
 
 module.exports = generateMarkdown;
 
