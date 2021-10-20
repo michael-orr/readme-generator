@@ -6,7 +6,7 @@
   <div align="center">
   <img src="./assets/images/readmelogo.png" alt="Logo" width="80" height="80">
 </div>
-  <h1>d</h2>
+  <h1>REally Cool Project</h2>
 
   <!-- TABLE OF CONTENTS -->
   <details>
@@ -24,7 +24,7 @@
 
 
   ## About The Project
-  d
+  IT's a great app with lots of cool stuff and gadgets.
   <p align="right">(<a href="#top">back to top</a>)</p>
 
   ## Built With
@@ -32,19 +32,19 @@
   <p align="right">(<a href="#top">back to top</a>)</p>
 
   ## Installation
-  d
+  insert a floopy disk
   <p align="right">(<a href="#top">back to top</a>)</p>
 
   ## Contributing
-  d
+  Please contribute
   <p align="right">(<a href="#top">back to top</a>)</p>
 
   ## Usage
-  d
+  It's a game for all to play.
   <p align="right">(<a href="#top">back to top</a>)</p>
   
   ## Tests
-  d
+  Please test it.
   <p align="right">(<a href="#top">back to top</a>)</p>
 
   ## License
