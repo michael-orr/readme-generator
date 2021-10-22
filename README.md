@@ -1,7 +1,7 @@
 
   <div id="top"></div>
-  
-  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
   <div align="center">
   <img src="./assets/images/readmelogo.png" alt="Logo" width="80" height="80">
@@ -44,7 +44,7 @@
   <p align="right">(<a href="#top">back to top</a>)</p>
  
   ## License
-  MIT https://www.gnu.org/licenses/gpl-3.0
+  MIT - https://opensource.org/licenses/MIT
   
   
 MIT License
