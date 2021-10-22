@@ -3,9 +3,9 @@ const licenses = require('./licenses')
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   let licenseBadge = "";
-  if (license === "MIT") {
+  if (license === "GNU") {
     licenseBadge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
-  } else if (license === "GNU") {
+  } else if (license === "MIT") {
     licenseBadge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
   } else if (license === "Apache") {
     licenseBadge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
@@ -19,9 +19,9 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   let licenseLink = "";
-  if (license === "MIT") {
+  if (license === "GNU") {
     licenseLink = "https://www.gnu.org/licenses/gpl-3.0";
-  } else if (license === "GNU") {
+  } else if (license === "MIT") {
     licenseBadge = "https://opensource.org/licenses/MIT";
   } else if (license === "Apache") {
     licenseLink = "https://opensource.org/licenses/Apache-2.0";
