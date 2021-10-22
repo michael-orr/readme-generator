@@ -6,7 +6,7 @@
   <div align="center">
   <img src="./assets/images/readmelogo.png" alt="Logo" width="80" height="80">
 </div>
-  <h1>REally Cool Project</h2>
+  <h1>README Generator</h2>
 
   <!-- TABLE OF CONTENTS -->
   <details>
@@ -15,7 +15,7 @@
     <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#built-with">Built With</a></li>
     <li><a href="#installation">Installation</a></li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#preview">Preview</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
   </ol>
@@ -24,29 +24,25 @@
 
 
   ## About The Project
-  IT's a great app with lots of cool stuff and gadgets.
+  This is a very convenient tool to get started on a readme file.  You will be prompted with questions about your project and your answers will be displayed in a professional README template.
   <p align="right">(<a href="#top">back to top</a>)</p>
 
   ## Built With
-  HTML
+  HTML,CSS,Javascript
   <p align="right">(<a href="#top">back to top</a>)</p>
 
   ## Installation
-  insert a floopy disk
+  Feel free to clone the repo at https://github.com/michael-orr/readme-generator
   <p align="right">(<a href="#top">back to top</a>)</p>
 
   ## Contributing
-  Please contribute
+  Contributions are welcome.  Feel free to clone the repo at https://github.com/michael-orr/readme-generator
   <p align="right">(<a href="#top">back to top</a>)</p>
 
-  ## Usage
-  It's a game for all to play.
+  ## Preview
+ ![This is a preview of README generator.](./assets/images/readme-generator.PNG)
   <p align="right">(<a href="#top">back to top</a>)</p>
-  
-  ## Tests
-  Please test it.
-  <p align="right">(<a href="#top">back to top</a>)</p>
-
+ 
   ## License
   MIT https://www.gnu.org/licenses/gpl-3.0
   
